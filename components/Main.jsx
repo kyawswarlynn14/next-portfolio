@@ -19,13 +19,13 @@ export default function Main() {
       <p className="hidden md:block tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
         Freelancer providing services for programming and design content needs.{" "}
         <br />
-        Join me down below and let's get cracking!
+        Join me down below and let&apos;s get cracking!
       </p>
 
       <p className=" block md:hidden tracking-wider leading-8 text-[#fdeed4]">
         Freelancer providing <br /> services for programming and <br /> design content needs.{" "}
         <br />
-        Join me down below and <br /> let's get cracking!
+        Join me down below and <br /> let&apos;s get cracking!
       </p>
 
       <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between my-4 ">
