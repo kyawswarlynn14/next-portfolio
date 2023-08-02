@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import BlogImage from '../assets/blog-background.jpg'
+import Link from "next/link";
 
 function Blog() {
 
@@ -22,9 +23,11 @@ function Blog() {
             Welcome to my portfolio blog page, where I&apos;ll be sharing my creative journey as an developer and designer. Here, I&apos;ll delve into the diverse world of visual expression, exploring various mediums, techniques, and inspirations that have shaped my work over the years.
             </p>
 
-            <Button size='lg'>
-                <a href="https://kyawswarlynn-blog.vercel.app/">Go to Blog</a>
-            </Button>
+            <Link href="https://kyawswarlynn-blog.vercel.app/">
+              <Button size='lg'>
+                  Go to Blog
+              </Button>
+            </Link>
         </div>
         
       </div>
