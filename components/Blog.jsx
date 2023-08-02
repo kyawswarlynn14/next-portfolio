@@ -19,7 +19,7 @@ function Blog() {
             <h3 className="text-xl font-semibold tracking-wider">Embracing Creativity</h3>
 
             <p className="text-lg md:text-xl py-2 leading-6 md:leading-8 text-white font-mono ">
-            Welcome to my portfolio blog page, where I'll be sharing my creative journey as an developer and designer. Here, I'll delve into the diverse world of visual expression, exploring various mediums, techniques, and inspirations that have shaped my work over the years.
+            Welcome to my portfolio blog page, where I&apos;ll be sharing my creative journey as an developer and designer. Here, I&apos;ll delve into the diverse world of visual expression, exploring various mediums, techniques, and inspirations that have shaped my work over the years.
             </p>
 
             <Button size='lg'>
