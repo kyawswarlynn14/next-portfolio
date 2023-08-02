@@ -6,6 +6,7 @@ import Main from "../components/Main";
 import Service from "../components/Service";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
+import Blog from "@/components/Blog";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -23,6 +24,8 @@ export default function Home() {
             <Service />
 
             <Portfolio />
+
+            <Blog />
         </div>
 
         <Footer />

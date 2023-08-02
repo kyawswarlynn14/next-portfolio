@@ -31,14 +31,14 @@ function Footer() {
 
         <div className="md:w-[30%] w-[80%] mx-auto text-center">
           <h4 className="text-lg mb-2">Navigations</h4>
-          <div className="flex justify-between gap-4 ">
-            <a href="#home" className=" text-gray-100">Home</a>
+          <div className="w-56 mx-auto flex justify-between gap-4 ">
+            <a href="#home" className=" text-gray-100 hover:underline underline-offset-2">Home</a>
             <span>|</span>
-            <a href="#service" className=" text-gray-100">Service</a>
+            <a href="#service" className=" text-gray-100 hover:underline underline-offset-2">Service</a>
 
             <span>|</span>
 
-            <a href="#portfolio" className=" text-gray-100">Portfolio</a>
+            <a href="#portfolio" className=" text-gray-100 hover:underline underline-offset-2">Portfolio</a>
           </div>
         </div>
       </div>

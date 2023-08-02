@@ -11,7 +11,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <h3 onClick={() => setPopUp(!popUp)} className=" font-bold tracking-wider font-mono">DevelopedByKSL</h3>
             
         <div className="flex gap-4">
-          <nav className="md:flex gap-8 mt-1 font-semibold hidden items-center">
+          <nav className="md:flex gap-4 mt-1 font-semibold hidden items-center">
             <a
               href="/"
               className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
@@ -31,6 +31,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
               className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
             >
               PORTFOLIO
+            </a>
+
+            <a
+              href="#blog"
+              className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
+            >
+              BLOG
             </a>
           </nav>
 
