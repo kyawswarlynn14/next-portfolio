@@ -14,17 +14,14 @@ function Footer() {
           <p><AiOutlineCopyrightCircle className="inline-flex" /> 2023 ksl</p>
         </div>
 
-        <div className=" md:w-[40%] text-center">
+        <div className=" md:w-[40%] text-start">
           <h3 className="text-center text-lg mb-2">Contact Me</h3>
 
-          <p>
-            <GoLocation className="inline-flex mr-2" /> 63(B), Between 20x21, Mandalay
-          </p>
-          <p>
+          <p className="sm:text-sm">
             <AiFillPhone className="inline-flex mr-2" /> +959266654144, +959767600246
           </p>
 
-          <p>
+          <p className="sm:text-sm">
             <AiFillMail className="inline-flex mr-2" /> kyawswarlynn14@gmail.com
           </p>
         </div>
