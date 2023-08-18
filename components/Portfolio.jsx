@@ -5,22 +5,26 @@ import web3 from "../assets/web3.jpg";
 import web4 from "../assets/web4.jpg";
 import web5 from "../assets/web5.png";
 import web6 from "../assets/web6.png";
+import web7 from "../assets/web7.png";
+import web8 from "../assets/web8.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
 function Portfolio() {
-  const ImageCard = ({ src, codeLink }) => {
+  const ImageCard = ({ src, codeLink, demoLink }) => {
     return (
       <div className="basis-1/3 flex-1 relative">
-        <Image
-          className="rounded-lg object-cover mb-4 border border-white"
-          width={"100%"}
-          height={"100%"}
-          layout="responsive"
-          src={src}
-          alt={src}
-        />
+        <Link href={demoLink} target="_blank">
+          <Image
+            className="rounded-lg object-cover mb-4 border border-white cursor-pointer"
+            width={"100%"}
+            height={"100%"}
+            layout="responsive"
+            src={src}
+            alt={src}
+          />
+        </Link>
 
         <Link href={codeLink} target="_blank">
           <Button
@@ -55,20 +59,26 @@ function Portfolio() {
         <ImageCard
           src={web1}
           codeLink="https://github.com/kyawswarlynn14/palaungminthar"
+          demoLink="https://kyawswarlynn14.github.io/palaungminthar"
         />
 
         <ImageCard
           src={web2}
           codeLink="https://github.com/kyawswarlynn14/palaungminthar"
+          demoLink="https://kyawswarlynn14.github.io/palaungminthar"
         />
 
-        <ImageCard src={web3} codeLink="https://github.com/kyawswarlynn14/" />
+        <ImageCard src={web3} codeLink="https://github.com/kyawswarlynn14/" demoLink="" />
 
-        <ImageCard src={web4} codeLink="https://github.com/kyawswarlynn14/" />
+        <ImageCard src={web4} codeLink="https://github.com/kyawswarlynn14/" demoLink="" />
 
-        <ImageCard src={web5} codeLink="https://github.com/kyawswarlynn14/ecommerce-store" />
+        <ImageCard src={web5} codeLink="https://github.com/kyawswarlynn14/ecommerce-store" demoLink="https://palaungminthar.vercel.app" />
 
-        <ImageCard src={web6} codeLink="https://github.com/kyawswarlynn14/ecommerce-admin" />
+        <ImageCard src={web6} codeLink="https://github.com/kyawswarlynn14/ecommerce-admin" demoLink="" />
+
+        <ImageCard src={web7} codeLink="https://github.com/kyawswarlynn14/ksl-blog" demoLink="https://kyawswarlynn-blog.vercel.app" />
+
+        <ImageCard src={web8} codeLink="https://github.com/kyawswarlynn14/ksl-blog" demoLink="https://kyawswarlynn-blog.vercel.app" />
       </div>
     </div>
   );

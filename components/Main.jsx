@@ -30,7 +30,7 @@ export default function Main() {
 
       <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between my-4 ">
         <a
-          className="text-[#fdeed4] hover:text-white"
+          className="text-[#fdeed4] hover:text-teal-400"
           href="https://github.com/kyawswarlynn14"
           target="_blank"
           rel="noreferrer"
@@ -39,7 +39,7 @@ export default function Main() {
         </a>
 
         <a
-          className="text-[#fdeed4] hover:text-white"
+          className="text-[#fdeed4] hover:text-teal-400"
           href="https://web.facebook.com/profile.php?id=100027180840462"
           target="_blank"
           rel="noreferrer"
@@ -48,7 +48,7 @@ export default function Main() {
         </a>
 
         <a
-          className="text-[#fdeed4] hover:text-white"
+          className="text-[#fdeed4] hover:text-teal-400"
           href="https://linkedin.com/in/kyaw-swar-lynn-78ab79260/"
           target="_blank"
           rel="noreferrer"
@@ -57,7 +57,7 @@ export default function Main() {
         </a>
 
         <a
-          className="text-[#fdeed4] hover:text-white"
+          className="text-[#fdeed4] hover:text-teal-400"
           href="https://t.me/kyawswarlynn14"
           target="_blank"
           rel="noreferrer"
