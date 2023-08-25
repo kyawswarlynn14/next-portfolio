@@ -46,7 +46,7 @@ function Portfolio() {
         Portofolio
       </h3>
 
-      <p className="text-md py-2 leading-8 text-justify text-[#fdeed4]">
+      <p className="text-md py-2 leading-8 text-start md:text-justify text-[#fdeed4]">
         I have successfully built various projects using{" "}
         <span className="dark:text-teal-500">React.js and Next.js</span> , including
         a captivating shopping web app and visually appealing personal websites.

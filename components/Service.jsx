@@ -61,7 +61,7 @@ function Service() {
           Services I offer
         </h3>
 
-        <p className=" text-md leading-8 text-[#fdeed4] text-justify">
+        <p className=" text-md leading-8 text-[#fdeed4] text-start md:text-justify">
           I specialize in creating dynamic and responsive websites using the
           latest web technologies such as{" "}
           <span className="dark:text-teal-500">
@@ -72,7 +72,7 @@ function Service() {
           I craft engaging and user-friendly interfaces.
         </p>
 
-        <p className="text-base py-2 leading-8 text-[#fdeed4] text-justify">
+        <p className="text-base py-2 leading-8 text-[#fdeed4] text-start">
           I offer from a wide range of services, including brand design,
           programming and teaching.
         </p>
@@ -94,13 +94,13 @@ function Service() {
             <p
               className={`${
                 state[service.serviceName] ? "h-auto " : "h-32 overflow-hidden"
-              } text-[#fdeed4] text-base text-justify px-2`}
+              } text-[#fdeed4] text-base text-center px-2`}
             >
               {service.description}
             </p>
 
             <Button
-              className=" mb-2"
+              className=" my-2"
               onClick={() => toggleReadMore(service.serviceName)}
             >
               {state[service.serviceName] ? (
