@@ -72,7 +72,7 @@ function Service() {
           I craft engaging and user-friendly interfaces.
         </p>
 
-        <p className="text-base py-2 leading-8 text-[#fdeed4] text-start">
+        <p className="text-base py-2 leading-8 text-[#fdeed4] text-center md:text-start">
           I offer from a wide range of services, including brand design,
           programming and teaching.
         </p>
