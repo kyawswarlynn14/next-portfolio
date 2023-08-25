@@ -17,11 +17,11 @@ function Footer() {
         <div className="md:ml-16 text-start">
           <h3 className="text-lg mb-2 font-semibold">Contact Me</h3>
 
-          <p className="text-base">
+          <p className="text-sm md:text-base">
             <AiFillPhone className="inline-flex mr-2" /> +959266654144, +959767600246
           </p>
 
-          <p className="text-base">
+          <p className="text-sm md:text-base">
             <AiFillMail className="inline-flex mr-2" /> kyawswarlynn14@gmail.com
           </p>
         </div>

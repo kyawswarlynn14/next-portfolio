@@ -61,7 +61,7 @@ function Service() {
           Services I offer
         </h3>
 
-        <p className=" text-md leading-8 text-[#fdeed4] text-start md:text-justify">
+        <p className=" text-md leading-8 text-[#fdeed4] text-center md:text-justify">
           I specialize in creating dynamic and responsive websites using the
           latest web technologies such as{" "}
           <span className="dark:text-teal-500">
