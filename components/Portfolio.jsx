@@ -10,14 +10,15 @@ import web8 from "../assets/web8.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Smartphone } from "lucide-react";
 
 function Portfolio() {
   const ImageCard = ({ src, codeLink, demoLink }) => {
     return (
-      <div className="basis-1/3 flex-1 relative">
+      <div className="relative hover:-translate-y-2 ease-in-out duration-500">
         <Link href={demoLink} target="_blank">
           <Image
-            className="rounded-lg object-cover mb-4 border border-white cursor-pointer"
+            className="rounded-lg object-cover border border-white cursor-pointer"
             width={"100%"}
             height={"100%"}
             layout="responsive"
@@ -29,6 +30,7 @@ function Portfolio() {
         <Link href={codeLink} target="_blank">
           <Button
             variant="destructive"
+            size="sm"
             className="absolute top-1 right-1"
           >
             view code
@@ -55,7 +57,7 @@ function Portfolio() {
         and engaging web experiences.
       </p>
 
-      <div className="flex flex-col gap-6 py-10 md:flex-row md:flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
         <ImageCard
           src={web1}
           codeLink="https://github.com/kyawswarlynn14/palaungminthar"

@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import NavMobile from "./NavMobile";
 
 export default function Navbar({ darkMode, setDarkMode }) {
-
+  let buttonStyle = "font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg ease-in-out duration-500";
 
   return (
     <nav className="md:w-[80%] mx-auto md:text-lg py-1  px-2 md:px-0 flex-col">
@@ -14,28 +14,28 @@ export default function Navbar({ darkMode, setDarkMode }) {
           <nav className="md:flex gap-4 mt-1 font-semibold hidden items-center">
             <a
               href="/"
-              className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
+              className={buttonStyle}
             >
               HOME
             </a>
 
             <a
               href="#services"
-              className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
+              className={buttonStyle}
             >
               SERVICES
             </a>
 
             <a
               href="#portfolio"
-              className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
+              className={buttonStyle}
             >
               PORTFOLIO
             </a>
 
             <a
               href="#blog"
-              className="font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg"
+              className={buttonStyle}
             >
               BLOG
             </a>
