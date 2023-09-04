@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
-import ksl from "../assets/ksl.jpg";
+import ksl from "../public/images/ksl.jpg";
 import Image from "next/image";
 
 export default function Main() {

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import BlogImage from '../assets/blog-background.jpg'
+import BlogImage from '../public/images/blog-background.jpg'
 import Link from "next/link";
 
 function Blog() {

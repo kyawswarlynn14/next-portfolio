@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillPhone, AiFillMail, AiOutlineCopyrightCircle } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import ksl from '../assets/ksl.jpg'
+import ksl from '../public/images/ksl.jpg'
 import Image from "next/image";
 
 function Footer() {

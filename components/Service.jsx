@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
-import webDevelopment from "../assets/web-development.webp";
-import webDesign from "../assets/web-design.jpg";
-import appDevelopment from "../assets/app-development.png";
+import webDevelopment from "../public/images/web-development.webp";
+import webDesign from "../public/images/web-design.jpg";
+import appDevelopment from "../public/images/app-development.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
 
