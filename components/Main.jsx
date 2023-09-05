@@ -15,7 +15,7 @@ export default function Main() {
       </h2>
 
       <h3 className="text-xl py-5 tracking-wider">
-        Developer and Designer!
+        Developer and Programmer!
       </h3>
 
       <p className="hidden md:block tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">

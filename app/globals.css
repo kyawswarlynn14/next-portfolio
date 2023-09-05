@@ -75,4 +75,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .webNavButton {
+    @apply font-mono hover:bg-[#ffffff4d] p-2 px-4 rounded-lg ease-in-out duration-500 flex items-center gap-2;
+  }
+
+  .mobileNavButton {
+    @apply font-mono bg-white p-2 px-4 rounded-lg flex items-center gap-2;
+  }
 }

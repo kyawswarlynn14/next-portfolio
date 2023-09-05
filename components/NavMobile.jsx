@@ -36,13 +36,13 @@ export default function NavMobile() {
                 <Dialog.Panel className="relative mr-auto flex h-full w-48 flex-col overflow-y-auto bg-slate-800 py-4 pb-6 shadow-xl rounded-r-lg">
 
                 <div className="flex items-center justify-end px-4" onClick={closeModal}>
-                    <RiCloseCircleFill className='text-xl text-white' />
+                    <RiCloseCircleFill className='text-2xl text-white' />
                 </div>
 
                 <nav className="flex flex-col mt-4 mx-6 gap-4">
                     <a
                     href="/"
-                    className="font-mono bg-white p-2 px-4 rounded-lg flex items-center gap-2"
+                    className="mobileNavButton"
                     onClick={closeModal}
                     >
                     <AiFillHome /> HOME
@@ -50,7 +50,7 @@ export default function NavMobile() {
 
                     <a
                     href="#services"
-                    className="font-mono bg-white p-2 px-4 rounded-lg flex items-center gap-2"
+                    className="mobileNavButton"
                     onClick={closeModal}
                     >
                     <FaLaptopCode /> SERVICES
@@ -58,7 +58,7 @@ export default function NavMobile() {
 
                     <a
                     href="#portfolio"
-                    className="font-mono bg-white p-2 px-4 rounded-lg flex items-center gap-2"
+                    className="mobileNavButton"
                     onClick={closeModal}
                     >
                     <BsPersonWorkspace /> PORTFOLIO
@@ -66,7 +66,7 @@ export default function NavMobile() {
 
                     <a
                     href="#blog"
-                    className="font-mono bg-white p-2 px-4 rounded-lg flex items-center gap-2"
+                    className="mobileNavButton"
                     onClick={closeModal}
                     >
                     <FaBlog /> BLOG
