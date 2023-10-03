@@ -8,6 +8,8 @@ import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import Blog from "@/components/Blog";
 import {IoArrowUp} from "react-icons/io5"
+import Certificate from "@/components/Certificate";
+import Tools from "@/components/Tools";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -31,25 +33,31 @@ export default function Home() {
   }
 
   return (
-    <div className={`${darkMode ? "dark bg-gray-800" : "bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8]"} text-white m-0`}>
+    <div className={`${darkMode ? "dark bg-gray-800 " : "bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8] "} m-0 text-white`}>
 
-        <div className={`${darkMode ? "bg-gray-800" : "bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8]"} sticky top-0 z-20 rounded-xl border-b-2 border-white`}>
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        </div>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <div className=' w-[95%] md:w-[80%] mx-auto'>
-            <Main />
+      <div className=' w-[95%] md:w-[80%] mx-auto'>
+          <Main />
 
-            <Service />
+          <Service />
 
-            <Portfolio />
+          <Tools />
 
-            <Blog />
-        </div>
+          <Portfolio />
 
-        <Footer />
+          <Certificate />
 
-        {show && <button className='fixed bottom-10 right-10  p-3 rounded dark:bg-[#ff69b0]  bg-[#1f3150] bg-opacity-90 shadow' onClick={handleScrollTop}><IoArrowUp className='text-xl text-white'/></button>}
+          <Blog />
+      </div>
+
+      <Footer />
+
+      {show && 
+        <button className='fixed bottom-10 right-10  p-3 rounded dark:bg-[#ff69b0]  bg-[#1f3150] bg-opacity-90 shadow' onClick={handleScrollTop}>
+          <IoArrowUp className='text-xl text-white'/>
+        </button>
+      }
     </div>
   )
 }

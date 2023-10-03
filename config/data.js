@@ -38,27 +38,15 @@ export const portfolioData = [
         demoLink: "https://kyawswarlynn14.github.io/palaungminthar"
     },
     {
-        src: "/images/web3.jpg",
-        codeLink: "https://github.com/kyawswarlynn14",
-        demoText: "Ecommerce web store using (ReactJs)",
-        demoLink: ""
-    },
-    {
-        src: "/images/web4.jpg",
-        codeLink: "https://github.com/kyawswarlynn14",
-        demoText: "Ecommerce web store using (ReactJs)",
-        demoLink: ""
+      src: "/images/web6.png",
+      codeLink: "https://github.com/kyawswarlynn14/ecommerce-admin",
+      demoText: "Palaung Min Thar Admin Dashboard using (NextJs, Prisma)",
+      demoLink: "https://palaungminthar.vercel.app"
     },
     {
         src: "/images/web5.png",
         codeLink: "https://github.com/kyawswarlynn14/ecommerce-store",
         demoText: "Palaung Min Thar Store using (NextJs, Prisma)",
-        demoLink: "https://palaungminthar.vercel.app"
-    },
-    {
-        src: "/images/web6.png",
-        codeLink: "https://github.com/kyawswarlynn14/ecommerce-admin",
-        demoText: "Palaung Min Thar Admin Dashboard using (NextJs, Prisma)",
         demoLink: "https://palaungminthar.vercel.app"
     },
     {

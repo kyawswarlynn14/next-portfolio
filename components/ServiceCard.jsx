@@ -34,7 +34,7 @@ function ServiceCard({service}) {
         <img
             src={service.image}
             alt={service.title}
-            className="w-full h-48 absolute top-0 rounded-t-xl"
+            className="w-full h-48 absolute object-cover top-0 rounded-t-xl"
         />
 
         <h3 className="text-lg font-medium py-2 mt-48 ">{service.title}</h3>

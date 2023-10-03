@@ -5,15 +5,12 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
 const PortfolioCard = ({ src, codeLink, demoLink, demoText }) => {
-    console.log(src)
     return (
-      <div className="md:min-h-[270px] lg:min-h-[300px] xl:min-h-[340px] dark:border border-white shadow-2xl dark:shadow-none rounded-xl flex flex-col justify-between gap-2 hover:scale-105 duration-500">
+      <div className=" dark:border border-white shadow-2xl dark:shadow-none rounded-xl flex flex-col justify-between gap-2 hover:scale-105 duration-500">
         <div className="relative">
           <Link href={demoLink} target="_blank">
-            <Image
-              className="rounded-t-xl object-cover cursor-pointer"
-              width={100}
-              height={100}
+            <img
+              className="max-h-48 md:max-h-56 w-full rounded-t-xl object-cover cursor-pointer"
               layout="responsive"
               src={src}
               alt="portfolio images"

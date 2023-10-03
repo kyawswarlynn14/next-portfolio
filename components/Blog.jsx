@@ -7,8 +7,8 @@ import Link from "next/link";
 function Blog() {
 
   return (
-    <div id="blog" className="w-full px-2 md:px-0 mx-auto text-lg pt-8">
-      <h3 className="dark:text-[#00FF00] text-2xl md:text-3xl pt-4 pb-1 font-mono font-semibold text-center">
+    <div id="blog" className="pageMainDiv text-white">
+      <h3 className="subTitle">
         Blog
       </h3>
 

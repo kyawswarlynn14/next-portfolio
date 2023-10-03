@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      backdropBlur: {
+        '5xl': '20rem',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
