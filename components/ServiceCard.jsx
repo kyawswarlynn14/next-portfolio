@@ -28,7 +28,7 @@ function ServiceCard({service}) {
 
   return (
     <div
-        className="w-full md:w-[22rem] h-fit mx-auto flex flex-col text-center place-items-center p-2 rounded-xl shadow-2xl dark:border border-white relative"
+        className="w-full md:w-[22rem] h-fit mx-auto flex flex-col text-center place-items-center p-2 rounded-xl shadow-2xl dark:shadow-slate-700 dark:shadow-lg relative"
         key={service.title}
     >
         <img

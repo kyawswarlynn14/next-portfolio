@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const PortfolioCard = ({ src, codeLink, demoLink, demoText }) => {
     return (
-      <div className=" dark:border border-white shadow-2xl dark:shadow-none rounded-xl flex flex-col justify-between gap-2 hover:scale-105 duration-500">
+      <div className=" shadow-2xl dark:shadow-slate-700 dark:shadow-lg rounded-xl flex flex-col justify-between gap-2 hover:scale-105 duration-500">
         <div className="relative">
           <Link href={demoLink} target="_blank">
             <img

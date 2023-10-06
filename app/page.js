@@ -12,7 +12,7 @@ import Certificate from "@/components/Certificate";
 import Tools from "@/components/Tools";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const [ show, setShow ] = useState(false);
 
   useEffect(() => {

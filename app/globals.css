@@ -93,7 +93,7 @@
   }
 
   .iconStyle {
-    @apply text-[#fdeed4] hover:text-[#57375D] ease-in-out duration-500;
+    @apply text-[#fdeed4] hover:text-[#57375D] dark:hover:text-[#ff69b0] ease-in-out duration-500;
   }
 
   .tool {
@@ -101,7 +101,7 @@
   }
 
   .toolTitle {
-    @apply text-lg font-semibold mb-2 dark:text-[#00FF00];
+    @apply text-lg font-semibold mb-2 text-white dark:text-[#00FF00];
   }
 
   .toolItem {

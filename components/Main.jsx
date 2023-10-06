@@ -8,11 +8,11 @@ export default function Main() {
   
   return (
     <div id="home" className="pt-8 text-center md:w-[80%] mx-auto">
-      <h2 className="tracking-wider font-serif text-3xl dark:text-[#00FF00] font-bold md:text-4xl m-0">
+      <h2 className="tracking-wider font-serif text-2xl dark:text-[#00FF00] font-bold md:text-4xl m-0">
         Kyaw Swar Lynn
       </h2>
 
-      <h3 className="text-xl md:text-2xl py-5 tracking-wider font-semibold">
+      <h3 className="text-lg md:text-2xl py-5 tracking-wider font-semibold">
         Software Developer!
       </h3>
 
