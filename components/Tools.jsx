@@ -1,6 +1,8 @@
 import React from "react";
 import { FaAngular, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
+import {BiLogoPostgresql, BiLogoMongodb, BiLogoAws, BiLogoDigitalocean } from 'react-icons/bi';
+import {SiMysql, SiMicrosoftazure, SiPostman} from 'react-icons/si';
 
 function Tools() {
   return (
@@ -28,17 +30,17 @@ function Tools() {
             <h5 className="toolTitle">Database</h5>
 
             <div className="toolItem">
-              <img src="/images/postgresql.png" width="25px" alt="" />
+              <BiLogoPostgresql size={25} />
                 PostgreSQL
             </div>
 
             <div className="toolItem">
-              <img src="/images/mysql.png" width="25px" alt="" />
+              <SiMysql size={25} />
                 MySQL
             </div>
 
             <div className="toolItem">
-              <img src="/images/mongodb.png" width="25px" alt="" />
+              <BiLogoMongodb size={25} />
                 MongoDB
             </div>
           </div>
@@ -73,17 +75,17 @@ function Tools() {
             <h5 className="toolTitle">Clouds and DevOps</h5>
 
             <div className="toolItem">
-              <img src="/images/aws.png" width="25px" alt="" /> 
+              <BiLogoAws size={25} />
               Amazon Web Services
             </div>
 
             <div className="toolItem">
-              <img src="/images/do.png" width="25px" alt="" />
+              <BiLogoDigitalocean size={25} />
               Digital Ocean
             </div>
 
             <div className="toolItem">
-              <img src="/images/azure.png" width="25px" alt="" />
+              <SiMicrosoftazure size={23} />
               Azure
             </div>
           </div>
@@ -92,7 +94,7 @@ function Tools() {
             <h5 className="toolTitle">Testing</h5>
 
             <div className="toolItem">
-              <img src="/images/postman.png" width="25px" alt="" /> 
+              <SiPostman size={25} />
               Postman
             </div>
           </div>
