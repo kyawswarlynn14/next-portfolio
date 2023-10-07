@@ -17,13 +17,13 @@ export default function Main() {
       </h3>
 
       <p className="hidden md:block tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
-        Freelancer providing services for programming and design content needs.{" "}
+        Freelancer providing services for Web Applications and Mobile Applications.{" "}
         <br />
         Join me down below and let&apos;s get cracking!
       </p>
 
       <p className=" block md:hidden tracking-wider leading-8 text-[#fdeed4]">
-        Freelancer providing <br /> services for programming and <br /> design content needs.{" "}
+        Freelancer providing <br /> services for Web Applications and <br /> Mobile Applications.{" "}
         <br />
         Join me down below and <br /> let&apos;s get cracking!
       </p>
