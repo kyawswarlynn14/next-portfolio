@@ -19,7 +19,7 @@ export default function Main() {
       <p className="hidden md:block tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
         Freelancer providing services for Web Applications and Mobile Applications.{" "}
         <br />
-        Join me down below and let&apos;s get cracking!
+        Join me down below and let&apos;s start working!
       </p>
 
       <p className=" block md:hidden tracking-wider leading-8 text-[#fdeed4]">
