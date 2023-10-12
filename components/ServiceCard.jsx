@@ -28,20 +28,22 @@ function ServiceCard({service}) {
 
   return (
     <div
-        className="w-full md:w-[22rem] h-fit mx-auto flex flex-col text-center place-items-center p-2 rounded-xl shadow-2xl dark:shadow-slate-700 dark:shadow-lg relative"
+        className="w-full md:w-[22rem] h-fit mx-auto flex flex-col text-center place-items-center p-2 rounded-xl shadow-2xl dark:shadow-slate-700 dark:shadow-lg relative overflow-hidden"
         key={service.title}
     >
-        <img
-            src={service.image}
-            alt={service.title}
-            className="w-full h-48 absolute object-cover top-0 rounded-t-xl"
-        />
+        <div className='w-full h-52 absolute top-0 rounded-t-xl overflow-hidden'>
+            <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover hover:scale-110 duration-500"
+            />
+        </div>
 
-        <h3 className="text-lg font-medium py-2 mt-48 ">{service.title}</h3>
+        <h3 className="text-lg font-medium py-2 mt-52 ">{service.title}</h3>
         <p
             className={`${
             state[service.serviceName] ? "h-auto " : "h-32 overflow-hidden"
-            } text-[#fdeed4] text-base text-center px-2`}
+            } text-[#fdeed4] text-base px-2 text-justify`}
         >
             {service.description}
         </p>

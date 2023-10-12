@@ -32,10 +32,22 @@ export const portfolioData = [
         demoLink: "https://kyawswarlynn14.github.io/palaungminthar"
     },
     {
-        src: "/images/web2.jpg",
-        codeLink: "https://github.com/kyawswarlynn14/palaungminthar",
-        demoText: "Palaung Min Thar web application using (ReactJs)",
-        demoLink: "https://kyawswarlynn14.github.io/palaungminthar"
+        src: "/images/web2.png",
+        codeLink: "https://github.com/kyawswarlynn14",
+        demoText: "Mandalay Software Institute (ReactJs, NodeJs)",
+        demoLink: "https://info.mandalaysoftwareinstitute.com"
+    },
+    {
+      src: "/images/web3.jpg",
+      codeLink: "https://github.com/kyawswarlynn14/weather_app",
+      demoText: "Weather App (Flutter)",
+      demoLink: "https://github.com/kyawswarlynn14/weather_app"
+    },
+    {
+      src: "/images/web4.jpg",
+      codeLink: "https://github.com/kyawswarlynn14/shop_app",
+      demoText: "Shopping App (Flutter)",
+      demoLink: "https://github.com/kyawswarlynn14/shop_app"
     },
     {
       src: "/images/web6.png",
@@ -57,8 +69,8 @@ export const portfolioData = [
     },
     {
         src: "/images/web8.png",
-        codeLink: "https://github.com/kyawswarlynn14/ksl-blog",
-        demoText: "Blog Web Application using (NextJs, GraphQL)",
-        demoLink: "https://kyawswarlynn-blog.vercel.app"
+        codeLink: "https://github.com/kyawswarlynn14",
+        demoText: "TastySoft (NextJs, NodeJs)",
+        demoLink: "https://tastysoft.co"
     },
 ]

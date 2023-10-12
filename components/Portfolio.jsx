@@ -10,7 +10,7 @@ function Portfolio() {
         Portofolio
       </h3>
 
-      <p className="text-md py-2 leading-8 text-center md:text-justify">
+      <p className="text-md py-2 leading-8 text-justify">
         I have successfully built various projects using{" "}
         <span className="text-[#00FF00] dark:text-teal-500">React Js, Next Js, Node Js and Express Js.</span> Proficient in React.js and Next.js, I also possess strong backend skills in Node.js and Express.js. I specialize in database management using Sequelize, with expertise in MySQL and PostgreSQL. My portfolio showcases dynamic, user-friendly web interfaces and fast, engaging experiences, seamlessly integrating frontend and backend technologies.
       </p>

@@ -7,7 +7,7 @@ function Certificate() {
         <h3 className="subTitle">Certifications</h3>
 
         <div>
-            <p className="text-center text-[#fdeed4] py-4">
+            <p className="text-justify text-[#fdeed4] py-4">
                 I have earned the Front End Development Libraries Certificate from{" "}
                 <a
                     className="text-[#00FF00] hover:underline"

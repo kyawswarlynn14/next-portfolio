@@ -10,7 +10,7 @@ function Service() {
           Services I offer
         </h3>
 
-        <p className=" text-md leading-8 text-center md:text-justify">
+        <p className=" text-md leading-8 text-justify">
           I specialize in creating dynamic and responsive websites using the
           latest web technologies such as{" "}
           <span className="dark:text-teal-500">
@@ -21,7 +21,7 @@ function Service() {
           I craft engaging and user-friendly interfaces.
         </p>
 
-        <p className="text-base py-2 leading-8 text-center md:text-start">
+        <p className="text-base py-2 leading-8 text-justify">
           I offer from a wide range of services, including brand design,
           programming and teaching.
         </p>

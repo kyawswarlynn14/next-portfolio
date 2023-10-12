@@ -10,7 +10,7 @@ const PortfolioCard = ({ src, codeLink, demoLink, demoText }) => {
         <div className="relative">
           <Link href={demoLink} target="_blank">
             <img
-              className="max-h-48 md:max-h-56 w-full rounded-t-xl object-cover cursor-pointer"
+              className="h-auto md:max-h-64 w-full rounded-t-xl object-cover cursor-pointer"
               layout="responsive"
               src={src}
               alt="portfolio images"
