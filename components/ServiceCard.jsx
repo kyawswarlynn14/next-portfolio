@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useReducer } from 'react'
 
 function reducer(state, action) {
@@ -32,7 +33,7 @@ function ServiceCard({service}) {
         key={service.title}
     >
         <div className='w-full h-52 absolute top-0 rounded-t-xl overflow-hidden'>
-            <img
+            <Image width={500} height={500}
                 src={service.img_url}
                 alt={service.title}
                 className="w-full h-full object-cover hover:scale-110 duration-500"

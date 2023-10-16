@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import { getCertificates } from '../config/services';
+import Image from 'next/image';
 
 function Certificate() {
     const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ function Certificate() {
         <h3 className="subTitle mb-8">Certifications</h3>
 
         {data?.map(d => (
-            <div className='w-full md:flex gap-4 shadow-2xl dark:shadow-slate-700 p-4 rounded-lg'>
+            <div key={d._id} className='w-full md:flex gap-4 shadow-2xl dark:shadow-slate-700 p-4 rounded-lg'>
                 <div className='md:w-[40%] flex flex-col items-center gap-4'>
                     <p className='font-mono font-semibold text-center text-lg md:text-xl underline underline-offset-4'>
                         {d?.title}
@@ -32,7 +33,9 @@ function Certificate() {
                 </div>
 
                 <div className="md:flex-1 mt-2">
-                    <img
+                    <Image
+                    width={500}
+                    height={500}
                     className="w-full h-auto"
                     src={d?.img_url}
                     alt="certificate image"

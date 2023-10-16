@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
@@ -6,7 +7,7 @@ const PortfolioCard = ({ src, codeLink, demoLink, title, content }) => {
       <div className=" shadow-2xl dark:shadow-slate-700 dark:shadow-lg rounded-xl flex flex-col justify-between gap-2 hover:scale-105 duration-500">
         <div className="relative">
           <a href={demoLink} target="_blank">
-            <img
+            <Image width={500} height={500}
               className="h-auto md:max-h-64 w-full rounded-t-xl object-cover cursor-pointer"
               layout="responsive"
               src={src}

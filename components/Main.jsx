@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { getItemsByName, getSocials } from "../config/services";
+import Image from "next/image";
 
 export default function Main() {
   const [data, setData] = useState([]);
@@ -47,7 +48,7 @@ export default function Main() {
           }
 
           return (
-            <a className="iconStyle" href={acc.link} target="_blank" rel="noreferrer"
+            <a key={acc._id} className="iconStyle" href={acc.link} target="_blank" rel="noreferrer"
             >
               {iconComponent}
             </a>
@@ -56,7 +57,7 @@ export default function Main() {
       </div>
 
       <div className="mx-auto rounded-full w-64 h-64 relative overflow-hidden mt-6 md:h-80 md:w-80 transform transition-all hover:scale-110 duration-500">
-        <img property="priority" src={data?.img_url} alt="ksl"/>
+        <Image width={500} height={500} property="priority" src={data?.img_url} alt="ksl"/>
       </div>
     </div>
   );
