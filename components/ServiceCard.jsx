@@ -1,5 +1,5 @@
+"use client";
 import React, { useReducer } from 'react'
-import { Button } from "./ui/button";
 
 function reducer(state, action) {
     switch (action.type) {
@@ -33,23 +33,23 @@ function ServiceCard({service}) {
     >
         <div className='w-full h-52 absolute top-0 rounded-t-xl overflow-hidden'>
             <img
-                src={service.image}
+                src={service.img_url}
                 alt={service.title}
                 className="w-full h-full object-cover hover:scale-110 duration-500"
             />
         </div>
 
-        <h3 className="text-lg font-medium py-2 mt-52 ">{service.title}</h3>
+        <h3 className="text-lg font-medium pb-4 mt-52 underline underline-offset-4">{service.title}</h3>
         <p
             className={`${
             state[service.serviceName] ? "h-auto " : "h-32 overflow-hidden"
             } text-[#fdeed4] text-base px-2 text-justify`}
         >
-            {service.description}
+            {service.content}
         </p>
 
-        <Button
-            className=" my-2"
+        <button
+            className="normalButton my-2"
             onClick={() => toggleReadMore(service.serviceName)}
         >
             {state[service.serviceName] ? (
@@ -57,7 +57,7 @@ function ServiceCard({service}) {
             ) : (
             <span>Read More</span>
             )}
-        </Button>
+        </button>
     </div>
   )
 }
