@@ -41,7 +41,7 @@ export default function NavMobile() {
 
                 <nav className="flex flex-col mt-4 mx-6 gap-4">
                     <a
-                    href="/"
+                    href="#home"
                     className="mobileNavButton"
                     onClick={closeModal}
                     >

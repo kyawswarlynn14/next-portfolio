@@ -18,7 +18,7 @@ function Service() {
   },[])
 
   return (
-    <div id="services" className="pageMainDiv">
+    <div id="services" className="pageMainDiv pt-0">
       <div className=" mb-8 md:text-lg">
         <h3 className="subTitle mb-4">
           {data?.title}

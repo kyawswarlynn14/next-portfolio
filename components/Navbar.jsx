@@ -16,7 +16,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <div className="flex gap-2">
           <nav className="md:flex gap-2 mt-1 font-semibold hidden items-center">
             <a
-              href="/"
+              href="#home"
               className="webNavButton"
             >
               <AiFillHome /> HOME

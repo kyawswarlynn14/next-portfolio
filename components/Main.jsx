@@ -5,6 +5,7 @@ import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { getItemsByName, getSocials } from "../config/services";
 import Image from "next/image";
+import ComputersCanvas from "./canvas/Computers";
 
 export default function Main() {
   const [data, setData] = useState([]);
@@ -20,20 +21,30 @@ export default function Main() {
   },[])
   
   return (
-    <div id="home" className="pt-8 text-center md:w-[80%] mx-auto">
-      <h2 className="tracking-wider font-serif text-2xl dark:text-[#00FF00] font-bold md:text-4xl m-0">
-        {data?.title}
-      </h2>
+    <div id="home" className="pt-4 text-center md:w-[80%] mx-auto">
+      {data.length <= 0 ? (
+        <p className="text-xl text-white font-semibold">Loading...</p>
+      ) : (
+        <>
+        <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden mb-4">
+          <Image width={500} height={500} property="priority" src={data?.img_url} alt="ksl"/>
+        </div>
 
-      <h3 className="text-lg md:text-2xl py-5 tracking-wider font-semibold">
-        {data?.position}
-      </h3>
+        <h2 className="tracking-wider font-serif text-2xl dark:text-[#00FF00] font-bold md:text-4xl">
+          {data?.title}
+        </h2>
 
-      <p className="tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
-        {data?.description}
-      </p>
+        <h3 className="text-lg md:text-2xl py-5 tracking-wider font-semibold">
+          {data?.position}
+        </h3>
 
-      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between my-4 ">
+        <p className="tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
+          {data?.description}
+        </p>
+        </>
+      )}
+
+      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-4 ">
         {accounts?.map(acc => {
           let iconComponent;
 
@@ -56,8 +67,8 @@ export default function Main() {
         })}
       </div>
 
-      <div className="mx-auto rounded-full w-64 h-64 relative overflow-hidden mt-6 md:h-80 md:w-80 transform transition-all hover:scale-110 duration-500">
-        <Image width={500} height={500} property="priority" src={data?.img_url} alt="ksl"/>
+      <div className="h-[250px] md:h-[350px] lg:h-[400px] xl:h-[420px] w-auto mx-auto">
+        <ComputersCanvas />
       </div>
     </div>
   );

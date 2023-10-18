@@ -3,6 +3,8 @@ import { FaAngular, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import {BiLogoPostgresql, BiLogoMongodb, BiLogoAws, BiLogoDigitalocean } from 'react-icons/bi';
 import {SiMysql, SiMicrosoftazure, SiPostman} from 'react-icons/si';
+import BallCanvas from "./canvas/Ball";
+import { technologies } from "@/constants";
 
 function Tools() {
   return (
@@ -11,7 +13,15 @@ function Tools() {
           Technologies I Use
         </h1>
 
-        <div className="mt-8 justify-between mx-auto flex gap-8 flex-wrap">
+        <div className='flex flex-row flex-wrap justify-center gap-10 mt-6'>
+          {technologies.map((technology) => (
+            <div className='w-28 h-28' key={technology.name}>
+              <BallCanvas icon={technology.icon} />
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="mt-8 justify-between mx-auto flex gap-8 flex-wrap">
           <div className="tool">
             <h5 className="toolTitle">Backend</h5>
 
@@ -98,7 +108,7 @@ function Tools() {
               Postman
             </div>
           </div>
-        </div>
+        </div> */}
     </div>
   );
 }
