@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const token = Cookies.get('token');
-const BASE_URL="https://kyawswarlynn.onrender.com";
+const BASE_URL="https://kyawswarlynn14.onrender.com";
 // const BASE_URL="http://localhost:3000";
 // Items
 
@@ -217,6 +217,45 @@ export const UpdateOneCertificate = async (id, data) => {
 
 export const DeleteOneCertificate = async (id) => {
     const res = await axios.delete(`${BASE_URL}/api/certificates/delete/${id}`, {
+        headers: {
+            "Authorization": `Bearer ${token}`,
+        }
+    });
+
+    return res.data;
+}
+
+// Mails
+export const getMails = async () => {
+    const res = await axios.get(`${BASE_URL}/api/mails/get`, {
+        headers: {
+            "Authorization": `Bearer ${token}`
+        }
+    });
+    return res.data;
+}
+
+export const CreateOneMail = async (data) => {
+    const res = await axios.post(`${BASE_URL}/api/mails/create`, data, {
+        headers: {
+            "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+    })
+    return res.data;
+}
+
+export const getOneMail = async (id) => {
+    const res = await axios.get(`${BASE_URL}/api/mails/get/${id}`, {
+        headers: {
+            "Authorization": `Bearer ${token}`
+        }
+    });
+    return res.data;
+}
+
+export const DeleteOneMail = async (id) => {
+    const res = await axios.delete(`${BASE_URL}/api/mails/delete/${id}`, {
         headers: {
             "Authorization": `Bearer ${token}`,
         }

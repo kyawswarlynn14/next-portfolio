@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import {AiFillAppstore} from 'react-icons/ai'
-import { RiAccountBoxFill } from 'react-icons/ri'
+import { RiAccountBoxFill, RiMailAddFill } from 'react-icons/ri'
 import { IoLogOut } from 'react-icons/io5'
 import Cookies from 'js-cookie';
 import { FaCertificate, FaLaptopCode } from 'react-icons/fa';
@@ -23,7 +23,7 @@ function AdminNav() {
                     DevelopedByKSL
                 </a>
 
-                <nav className="flex gap-4 mt-1 items-center">
+                <nav className="flex gap-2 mt-1 items-center">
                     <a href='/admin/home'  className="webNavButton">
                         <AiFillAppstore /> Items
                     </a>
@@ -38,6 +38,10 @@ function AdminNav() {
 
                     <a href='/admin/home/certificates' className="webNavButton">
                         <FaCertificate /> Certificates
+                    </a>
+
+                    <a href='/admin/home/mails' className="webNavButton">
+                        <RiMailAddFill /> Mails
                     </a>
 
                     <a href='/admin/home/socials' className="webNavButton">

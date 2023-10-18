@@ -1,6 +1,6 @@
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
-import { RiMenu3Line, RiCloseCircleFill } from "react-icons/ri";
+import { RiMenu3Line, RiCloseCircleFill, RiContactsFill } from "react-icons/ri";
 import {AiFillHome} from 'react-icons/ai'
 import {FaLaptopCode, FaBlog} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
@@ -33,10 +33,10 @@ export default function NavMobile() {
             <div className="fixed inset-0 bg-black bg-opacity-40" />
 
             <div className="fixed inset-0 z-40 flex">
-                <Dialog.Panel className="relative mr-auto flex h-full w-64 flex-col overflow-y-auto bg-slate-800 py-4 pb-6 shadow-xl rounded-r-lg">
+                <Dialog.Panel className="relative mr-auto flex h-full w-60 flex-col overflow-y-auto bg-slate-800 py-4 pb-6 shadow-xl rounded-r-3xl">
 
-                <div className="flex items-center justify-end px-4" onClick={closeModal}>
-                    <RiCloseCircleFill className='text-2xl text-white' />
+                <div className="flex items-center justify-end px-4 my-4" onClick={closeModal}>
+                    <RiCloseCircleFill className='text-3xl text-white' />
                 </div>
 
                 <nav className="flex flex-col mt-4 mx-6 gap-4">
@@ -62,6 +62,14 @@ export default function NavMobile() {
                     onClick={closeModal}
                     >
                     <BsPersonWorkspace /> PORTFOLIO
+                    </a>
+
+                    <a
+                    href="#contactme"
+                    className="mobileNavButton"
+                    onClick={closeModal}
+                    >
+                    <RiContactsFill /> CONTACT
                     </a>
 
                     <a

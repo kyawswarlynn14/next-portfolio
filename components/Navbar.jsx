@@ -4,16 +4,17 @@ import NavMobile from "./NavMobile";
 import {AiFillHome} from 'react-icons/ai'
 import {FaLaptopCode, FaBlog} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
+import { RiContactsFill } from "react-icons/ri";
 
 export default function Navbar({ darkMode, setDarkMode }) {
 
   return (
     <nav className={`${darkMode ? 'bg-gray-900' : 'bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8]'} md:text-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-[0.2] sticky top-0 z-20 rounded-b-xl border-b-2 border-white py-1  px-2 md:px-0 flex-col`}>
-      <div className="md:w-[90%] lg:w-[80%] mx-auto flex justify-between items-center">
+      <div className="md:w-[95%] lg:w-[80%] mx-auto flex justify-between items-center">
         <h3 onClick={() => setPopUp(!popUp)} className=" font-bold tracking-wider font-mono">DevelopedByKSL</h3>
             
-        <div className="flex gap-4">
-          <nav className="md:flex gap-4 mt-1 font-semibold hidden items-center">
+        <div className="flex gap-2">
+          <nav className="md:flex gap-2 mt-1 font-semibold hidden items-center">
             <a
               href="/"
               className="webNavButton"
@@ -41,13 +42,20 @@ export default function Navbar({ darkMode, setDarkMode }) {
             >
               <FaBlog /> BLOG
             </a>
+
+            <a
+              href="#contactme"
+              className="webNavButton"
+            >
+              <RiContactsFill /> CONTACT
+            </a>
           </nav>
 
           <div className=" h-10 w-10 flex items-center mt-1">
             {darkMode ? (
-              <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-3xl" />
+              <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
             ) : (
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
+              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-xl" />
             )}
           </div>
 

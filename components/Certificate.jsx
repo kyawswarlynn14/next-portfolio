@@ -17,7 +17,7 @@ function Certificate() {
         <h3 className="subTitle mb-8">Certifications</h3>
 
         {data?.map(d => (
-            <div key={d._id} className='w-full md:flex gap-4 shadow-2xl dark:shadow-slate-700 p-4 rounded-lg'>
+            <div key={d._id} className='w-full md:flex gap-4 shadow-[0px_2px_10px_5px_rgba(0,0,0,0.2)] dark:shadow-slate-700 p-4 rounded-lg'>
                 <div className='md:w-[40%] flex flex-col items-center gap-4'>
                     <p className='font-mono font-semibold text-center text-lg md:text-xl underline underline-offset-4'>
                         {d?.title}

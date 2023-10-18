@@ -10,6 +10,7 @@ import Blog from "@/components/Blog";
 import {IoArrowUp} from "react-icons/io5"
 import Certificate from "@/components/Certificate";
 import Tools from "@/components/Tools";
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)
@@ -47,6 +48,8 @@ export default function Home() {
           <Portfolio />
 
           <Certificate />
+
+          <ContactMe />
 
           <Blog />
       </div>
