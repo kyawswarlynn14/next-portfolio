@@ -1,13 +1,13 @@
 
 export const technologies = [
-  {
-    name: "HTML 5",
-    icon: "/tech/html.png",
-  },
-  {
-    name: "CSS 3",
-    icon: '/tech/css.png',
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: "/tech/html.png",
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: '/tech/css.png',
+  // },
   {
     name: "JavaScript",
     icon: "/tech/javascript.png",
@@ -20,18 +20,18 @@ export const technologies = [
     name: "React JS",
     icon: "/tech/reactjs.png",
   },
-  {
-    name: "Redux Toolkit",
-    icon: "/tech/redux.png",
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: "/tech/redux.png",
+  // },
   {
     name: "Angular",
     icon: "/tech/angular.png"
   },
-  {
-    name: "Dart",
-    icon: "/tech/dart.png"
-  },
+  // {
+  //   name: "Dart",
+  //   icon: "/tech/dart.png"
+  // },
   {
     name: "Flutter",
     icon: "/tech/flutter.png"
@@ -64,10 +64,10 @@ export const technologies = [
     name: "figma",
     icon: "/tech/figma.png",
   },
-  {
-    name: "docker",
-    icon: "/tech/docker.png",
-  },
+  // {
+  //   name: "docker",
+  //   icon: "/tech/docker.png",
+  // },
   {
     name: "Postman",
     icon: "/tech/postman.png",
