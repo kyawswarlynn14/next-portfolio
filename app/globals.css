@@ -137,6 +137,6 @@
   }
 
   .contact1Input{
-    @apply bg-[#7F00FF] py-3 px-6 placeholder:text-white text-white rounded-lg outline-none border-none font-medium;
+    @apply  py-2 px-6 bg-inherit placeholder:text-white text-white rounded-lg outline-none border-cyan-400 border font-medium;
   }
 }

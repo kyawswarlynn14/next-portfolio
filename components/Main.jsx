@@ -44,7 +44,7 @@ export default function Main() {
         </>
       )}
 
-      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-2 ">
+      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-4 ">
         {accounts?.map(acc => {
           let iconComponent;
 

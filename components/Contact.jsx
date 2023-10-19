@@ -43,10 +43,10 @@ const Contact = () => {
 
   return (
     <div
-      className={`lg:mt-8 flex lg:flex-row flex-col-reverse gap-4 justify-between`}
+      className={`lg:mt-12 flex lg:flex-row flex-col-reverse gap-4 justify-between`}
     >
       <div
-        className='flex-[0.75] bg-gray-900 p-8 h-fit w-full md:w-[600px] lg:w-full md:mx-auto lg:mx-0 rounded-2xl'
+        className='flex-[0.75] shadow-[0px_2px_10px_5px_rgba(0,0,0,0.2)] dark:shadow-slate-700  p-8 h-fit w-full md:w-[600px] lg:w-full md:mx-auto lg:mx-0 rounded-2xl'
       >
         <h3 className="subTitle pt-0">Contacts Me</h3>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                     name='email'
                     value={values.email}
                     onChange={handleChange}
-                    placeholder="What's your web address?"
+                    placeholder="What's your email address?"
                     className='contact1Input'
                 />
                 <input
@@ -99,7 +99,7 @@ const Contact = () => {
 
             <button
                 type='submit'
-                className='py-2 rounded-lg font-semibold text-white cursor-pointer px-12 bg-[#7F00FF]'
+                className='py-2 rounded-lg font-semibold text-white cursor-pointer px-12 bg-cyan-500 hover:opacity-80 transition-all duration-300'
             >
                 {isLoading ? "Sending..." : "Send"}
             </button>

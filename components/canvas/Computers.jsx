@@ -19,11 +19,11 @@ const Computers = () => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={3} position={[0, 3, 0]} />
+      <pointLight intensity={3} position={[0, 2, 0]} />
       <primitive
         object={computer.scene}
         scale={0.75}
-        position={[0, -0.2, -1]}
+        position={[0, -0.8, -1]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -36,7 +36,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 22 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
