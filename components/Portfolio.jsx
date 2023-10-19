@@ -28,7 +28,7 @@ function Portfolio() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 my-4">
         {portfolios?.map((data, index) => (
-          <PortfolioCard key={index} src={data.img_url} codeLink={data.code_Link} demoLink={data.demo_Link} title={data.title} content={data.content} />
+          <PortfolioCard key={index} src={data.img_url} codeLink={data.code_link} demoLink={data.demo_link} title={data.title} content={data.content} />
         ))}
       </div>
     </div>

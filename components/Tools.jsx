@@ -13,7 +13,7 @@ function Tools() {
           Technologies I Use
         </h1>
 
-        <div className='flex flex-row flex-wrap justify-center gap-10 mt-6'>
+        <div className='hidden md:flex flex-row flex-wrap justify-center gap-10 mt-6'>
           {technologies.map((technology) => (
             <div className='w-28 h-28' key={technology.name}>
               <BallCanvas icon={technology.icon} />
@@ -21,7 +21,7 @@ function Tools() {
           ))}
         </div>
 
-        {/* <div className="mt-8 justify-between mx-auto flex gap-8 flex-wrap">
+        <div className="mt-8 justify-between mx-auto flex md:hidden gap-8 flex-wrap">
           <div className="tool">
             <h5 className="toolTitle">Backend</h5>
 
@@ -108,7 +108,7 @@ function Tools() {
               Postman
             </div>
           </div>
-        </div> */}
+        </div>
     </div>
   );
 }

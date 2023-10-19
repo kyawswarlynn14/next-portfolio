@@ -21,12 +21,12 @@ export default function Main() {
   },[])
   
   return (
-    <div id="home" className="pt-4 text-center md:w-[80%] mx-auto">
+    <div id="home" className=" text-center md:w-[80%] mx-auto">
       {data.length <= 0 ? (
-        <p className="text-xl text-white font-semibold">Loading...</p>
+        <p className="text-xl text-white font-semibold tracking-wider">Loading...</p>
       ) : (
         <>
-        <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden mb-4">
+        <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden my-2">
           <Image width={500} height={500} property="priority" src={data?.img_url} alt="ksl"/>
         </div>
 
@@ -34,7 +34,7 @@ export default function Main() {
           {data?.title}
         </h2>
 
-        <h3 className="text-lg md:text-2xl py-5 tracking-wider font-semibold">
+        <h3 className="text-lg md:text-2xl py-3 tracking-wider font-semibold">
           {data?.position}
         </h3>
 
@@ -44,7 +44,7 @@ export default function Main() {
         </>
       )}
 
-      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-4 ">
+      <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-2 ">
         {accounts?.map(acc => {
           let iconComponent;
 
@@ -67,7 +67,7 @@ export default function Main() {
         })}
       </div>
 
-      <div className="h-[250px] md:h-[350px] lg:h-[400px] xl:h-[420px] w-auto mx-auto">
+      <div className="h-[220px] md:h-[350px] lg:h-[400px] xl:h-[420px] w-auto mx-auto">
         <ComputersCanvas />
       </div>
     </div>

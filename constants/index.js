@@ -28,10 +28,6 @@ export const technologies = [
     name: "Angular",
     icon: "/tech/angular.png"
   },
-  // {
-  //   name: "Dart",
-  //   icon: "/tech/dart.png"
-  // },
   {
     name: "Flutter",
     icon: "/tech/flutter.png"
@@ -64,10 +60,6 @@ export const technologies = [
     name: "figma",
     icon: "/tech/figma.png",
   },
-  // {
-  //   name: "docker",
-  //   icon: "/tech/docker.png",
-  // },
   {
     name: "Postman",
     icon: "/tech/postman.png",
