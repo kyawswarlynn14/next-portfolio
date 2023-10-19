@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
@@ -11,6 +10,8 @@ import {IoArrowUp} from "react-icons/io5"
 import Certificate from "@/components/Certificate";
 import Tools from "@/components/Tools";
 import ContactMe from "@/components/ContactMe";
+import Contact from "@/components/Contact";
+import StarsCanvas from "@/components/canvas/Stars";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)
@@ -47,13 +48,17 @@ export default function Home() {
 
           <Portfolio />
 
-          <Certificate />
+          <div className="relative z-0">
+            <Certificate />
+            <Contact />
+            <StarsCanvas />
+            <Blog />
+          </div>
 
-          <ContactMe />
 
-          <Blog />
+          {/* <ContactMe /> */}
+
       </div>
-
       <Footer />
 
       {show && 

@@ -135,4 +135,8 @@
   .adminCreatePage{
     @apply min-h-screen bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8] flex items-center justify-center pb-4;
   }
+
+  .contact1Input{
+    @apply bg-[#7F00FF] py-3 px-6 placeholder:text-white text-white rounded-lg outline-none border-none font-medium;
+  }
 }
