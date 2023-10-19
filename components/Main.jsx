@@ -23,7 +23,7 @@ export default function Main() {
   return (
     <div id="home" className=" text-center md:w-[80%] mx-auto">
       {data.length <= 0 ? (
-        <p className="text-xl text-white font-semibold tracking-wider">Loading...</p>
+        <p className="text-xl text-white font-semibold tracking-wider mt-6">Loading...</p>
       ) : (
         <>
         <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden my-2">
