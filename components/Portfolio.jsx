@@ -1,7 +1,3 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import PortfolioCard from "./PortfolioCard";
-import { getItemsByName, getPortfolios } from "../config/services";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -61,19 +57,7 @@ const ProjectCard = ({index, name, description, image, source_code_link, demo_li
 };
 
 
-function Portfolio() {
-  const [data, setData] = useState([]);
-  const [portfolios, setPortfolios] = useState([]);
-  useEffect(() => {
-    getItemsByName("portfolio").then(data => {
-      setData(data);
-    })
-
-    getPortfolios().then(data => {
-      setPortfolios(data);
-    })
-  },[])
-
+function Portfolio({data, portfolios}) {
   return (
     <div id="portfolio" className="pageMainDiv">
       <h3 className="subTitle">

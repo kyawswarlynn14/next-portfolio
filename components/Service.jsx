@@ -1,22 +1,6 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { getItemsByName, getServices } from "../config/services";
 import ServiceCard from "./ServiceCard";
 
-function Service() {
-  const [data, setData] = useState([]);
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    getItemsByName("services").then(data => {
-      setData(data);
-    })
-
-    getServices().then(data => {
-      setServices(data);
-    })
-  },[])
-
+function Service({data, services}) {
   return (
     <div id="services" className="pageMainDiv pt-0">
       <div className=" mb-8 md:text-lg">

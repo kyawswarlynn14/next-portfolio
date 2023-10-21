@@ -1,17 +1,6 @@
-"use client";
-import React, { useEffect, useState } from 'react'
-import { getCertificates } from '../config/services';
 import Image from 'next/image';
 
-function Certificate() {
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        getCertificates().then((data) => {
-            setData(data);
-        })
-    }, [])
-
+function Certificate({data}) {
   return (
     <div id='certificates' className="pageMainDiv">
         <h3 className="subTitle mb-8">Certifications</h3>

@@ -4,9 +4,9 @@ import NavMobile from "./NavMobile";
 import {AiFillHome} from 'react-icons/ai'
 import {FaLaptopCode, FaBlog} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
-import { RiContactsFill } from "react-icons/ri";
+import { RiAdminFill, RiContactsFill } from "react-icons/ri";
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar({ darkMode, setDarkMode, token }) {
 
   return (
     <nav className={`${darkMode ? 'bg-gray-900' : 'bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8]'} md:text-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-[0.2] sticky top-0 z-20 rounded-b-xl border-b-2 border-white py-1  px-2 md:px-0 flex-col`}>
@@ -15,6 +15,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
             
         <div className="flex gap-2">
           <nav className="md:flex gap-2 mt-1 font-semibold hidden items-center">
+            <a
+              href="/admin/home"
+              className="webNavButton"
+            >
+              <RiAdminFill /> ADMIN
+            </a>
+
             <a
               href="#home"
               className="webNavButton"

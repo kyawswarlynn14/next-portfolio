@@ -1,24 +1,9 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
-import { getItemsByName, getSocials } from "../config/services";
 import Image from "next/image";
 import ComputersCanvas from "./canvas/Computers";
 
-export default function Main() {
-  const [data, setData] = useState([]);
-  const [accounts, setAccounts] = useState([]);
-  useEffect(() => {
-    getItemsByName("kyaw swar lynn").then(data => {
-      setData(data);
-    })
-
-    getSocials().then(data => {
-      setAccounts(data);
-    })
-  },[])
+export default function Main({data, accounts}) {
   
   return (
     <div id="home" className=" text-center md:w-[80%] mx-auto">
