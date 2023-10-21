@@ -15,12 +15,14 @@ export default function Navbar({ darkMode, setDarkMode, token }) {
             
         <div className="flex gap-2">
           <nav className="md:flex gap-2 mt-1 font-semibold hidden items-center">
+            {token && 
             <a
               href="/admin/home"
               className="webNavButton"
             >
               <RiAdminFill /> ADMIN
             </a>
+            }
 
             <a
               href="#home"
