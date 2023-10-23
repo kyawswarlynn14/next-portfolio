@@ -43,6 +43,7 @@ export default function Home() {
 
       await getSocials().then((data) => {
         setAccounts(data);
+        setLoadServiceData(true);
       });
 
       if (loadServiceData) {
@@ -81,7 +82,6 @@ export default function Home() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         setShow(true);
-        setLoadServiceData(true);
       } else {
         setShow(false);
       }
@@ -100,11 +100,7 @@ export default function Home() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} token={Cookies.get("token")} />
 
       <div className="w-[95%] md:w-[80%] mx-auto">
-        {mainData === null ? (
-          <div className="text-center">Loading Main Data...</div>
-        ) : (
-          <Main data={mainData} accounts={accounts} />
-        )}
+        <Main data={mainData} accounts={accounts} />
 
         {serviceData === null ? (
           <div className="text-center">Loading Service Data...</div>
