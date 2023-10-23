@@ -12,7 +12,7 @@ const RootLayout = ({ children }) => {
     if(!token) {
         router.push('/404')
     }
-  }, [])
+  }, [token, router])
 
   return (
     <html lang='en'>

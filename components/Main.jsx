@@ -23,7 +23,7 @@ export default function Main({data, accounts}) {
           </h3>
 
           <p className="tracking-wider leading-8 text-[#fdeed4] max-w-5xl mx-auto md:text-xl">
-            Freelancer providing services for Web Applications and Mobile Applications. Join me down below and let's start working!
+            Freelancer providing services for Web Applications and Mobile Applications. Join me down below and let&apos;s start working!
           </p>
 
           <div className="w-64 md:w-80 mx-auto text-5xl flex justify-between mt-4 ">
