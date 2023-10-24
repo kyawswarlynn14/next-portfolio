@@ -24,59 +24,53 @@ import Main from "@/components/Main";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [show, setShow] = useState(false);
-  const [mainData, setMainData] = useState(null);
-  const [accounts, setAccounts] = useState([]);
-  const [serviceData, setServiceData] = useState(null);
-  const [services, setServices] = useState([]);
-  const [portfolioData, setPortfolioData] = useState(null);
-  const [portfolios, setPortfolios] = useState([]);
-  const [certificateData, setCertificateData] = useState(null);
-  const [blogData, setBlogData] = useState([]);
 
-  const [loadServiceData, setLoadServiceData] = useState(false);
+  // const [mainData, setMainData] = useState(null);
+  // const [accounts, setAccounts] = useState([]);
+  // const [serviceData, setServiceData] = useState(null);
+  // const [services, setServices] = useState([]);
+  // const [portfolioData, setPortfolioData] = useState(null);
+  // const [portfolios, setPortfolios] = useState([]);
+  // const [certificateData, setCertificateData] = useState(null);
+  // const [blogData, setBlogData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async() => {
-      await getItemsByName("kyaw swar lynn").then((data) => {
-        setMainData(data);
-      }); 
+  // useEffect(() => {
+  //   const fetchData = async() => {
+  //     await getItemsByName("kyaw swar lynn").then((data) => {
+  //       setMainData(data);
+  //     }); 
 
-      await getSocials().then((data) => {
-        setAccounts(data);
-        setLoadServiceData(true);
-      });
+  //     await getSocials().then((data) => {
+  //       setAccounts(data);
+  //     });
 
-      if (loadServiceData) {
-        await getItemsByName("services").then((data) => {
-          setServiceData(data);
-        });
-  
-        await getServices().then((data) => {
-          setServices(data);
-        });
-      }
+  //     await getItemsByName("services").then((data) => {
+  //       setServiceData(data);
+  //     });
+
+  //     await getServices().then((data) => {
+  //       setServices(data);
+  //     });
       
-      if (serviceData !== null) {
-        await getItemsByName("portfolio").then((data) => {
-          setPortfolioData(data);
-        });
-    
-        await getPortfolios().then((data) => {
-          setPortfolios(data);
-        });
+  //     await getItemsByName("portfolio").then((data) => {
+  //       setPortfolioData(data);
+  //     });
   
-        getCertificates().then((data) => {
-          setCertificateData(data);
-        });
-  
-        getItemsByName("blog").then((data) => {
-          setBlogData(data);
-        });
-      }
-    }
+  //     await getPortfolios().then((data) => {
+  //       setPortfolios(data);
+  //     });
 
-    fetchData();
-  }, [loadServiceData, serviceData]);
+  //     getCertificates().then((data) => {
+  //       setCertificateData(data);
+  //     });
+
+  //     getItemsByName("blog").then((data) => {
+  //       setBlogData(data);
+  //     });
+  //   }
+
+  //   fetchData();
+  // }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -100,31 +94,18 @@ export default function Home() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} token={Cookies.get("token")} />
 
       <div className="w-[95%] md:w-[80%] mx-auto">
-        <Main data={mainData} accounts={accounts} />
-
-        {serviceData === null ? (
-          <div className="text-center">Loading Service Data...</div>
-        ) : (
-          <Service data={serviceData} services={services} />
-        )}
+        <Main />
+        <Service />
 
         <Tools />
 
-        {portfolioData === null ? (
-          <div className="text-center">Loading Portfolio Data...</div>
-        ) : (
-          <Portfolio data={portfolioData} portfolios={portfolios} />
-        )}
+        <Portfolio />
 
         <div className="relative z-0">
-          {certificateData === null ? (
-            <div className="text-center">Loading Certificate Data...</div>
-          ) : (
-            <Certificate data={certificateData} />
-          )}
+          <Certificate />
           <Contact />
           <StarsCanvas />
-          <Blog data={blogData} />
+          <Blog />
         </div>
       </div>
       <Footer />

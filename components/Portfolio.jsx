@@ -3,6 +3,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { CgWebsite } from "react-icons/cg";
+import { portfolioData } from "@/config/data";
 
 const ProjectCard = ({index, name, description, image, source_code_link, demo_link}) => {
   return (
@@ -57,19 +58,20 @@ const ProjectCard = ({index, name, description, image, source_code_link, demo_li
 };
 
 
-function Portfolio({data, portfolios}) {
+function Portfolio() {
   return (
     <div id="portfolio" className="pageMainDiv">
       <h3 className="subTitle">
-        {data?.title}
+        {/* {data?.title} */}Portfolio
       </h3>
 
       <p className="text-md py-2 leading-8 text-justify">
-        {data?.description}
+        {/* {data?.description} */}
+        I have successfully built various projects using React Js, Next Js, Node Js and Express Js. Proficient in React.js and Next.js, I also possess strong backend skills in Node.js and Express.js. I specialize in database management using Sequelize, with expertise in MySQL and PostgreSQL. My portfolio showcases dynamic, user-friendly web interfaces and fast, engaging experiences, seamlessly integrating frontend and backend technologies.
       </p>
 
       <div className='my-8 grid grid-cols-1 md:grid-cols-2 gap-8' >
-        {portfolios.map((project, index) => (
+        {portfolioData.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} name={project.title} description={project.content} image={project.img_url} source_code_link={project.code_link} demo_link={project.demo_link} />
         ))}
       </div>
