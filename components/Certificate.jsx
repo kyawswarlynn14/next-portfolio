@@ -6,9 +6,9 @@ function Certificate() {
     <div id='certificates' className="pageMainDiv">
         <h3 className="subTitle mb-8">Certifications</h3>
 
-        {certificateData?.map(d => (
-            <div key={d._id} className='w-full md:flex gap-4 shadow-[0px_2px_10px_5px_rgba(0,0,0,0.2)] dark:shadow-slate-700 p-4 rounded-lg'>
-                <div className='md:w-[40%] flex flex-col items-center gap-4'>
+        {certificateData?.map((d, index) => (
+            <div key={index} className={`w-full gap-4 shadow-[0px_2px_10px_5px_rgba(0,0,0,0.2)] dark:shadow-slate-700 p-4 rounded-lg mb-8 ${index%2 === 0 ? 'md:flex' : 'md:flex flex-row-reverse'}`}>
+                <div className='md:w-[40%] flex flex-col items-center gap-4 md:m-4'>
                     <p className='font-mono font-semibold text-center text-lg md:text-xl underline underline-offset-4'>
                         {d?.title}
                     </p>
@@ -17,7 +17,7 @@ function Certificate() {
                         {d?.content}
                     </p>
 
-                    <a href={d?.demo_link} className='normalButton px-8'>
+                    <a href={d?.demo_link} target='_blank' className='normalButton px-8'>
                         Virefy Here
                     </a>
                 </div>

@@ -89,7 +89,13 @@ export const certificateData = [
     content: "I have earned the Front End Development Libraries Certificate from freeCodeCamp. You can verify my certification below. This certification demonstrates my dedication to mastering front-end development skills.",
     demo_link: "https://www.freecodecamp.org/certification/kyawswarlynn14/front-end-development-libraries",
     img_url: "/images/certificate1.png"
-  }
+  },
+  {
+    title: "Back End Development and APIs",
+    content: "I have earned the Back End Development and APIs Certificate from freeCodeCamp. You can verify my certification below. This certification demonstrates my dedication to mastering backend-end development skills.",
+    demo_link: "https://www.freecodecamp.org/certification/kyawswarlynn14/back-end-development-and-apis",
+    img_url: "/images/fcc-backend-certificate.png"
+  },
 ]
 
 export const blogData ={
