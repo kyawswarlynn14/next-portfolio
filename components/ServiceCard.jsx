@@ -1,31 +1,7 @@
-"use client";
 import Image from 'next/image';
-import React, { useReducer } from 'react'
-
-function reducer(state, action) {
-    switch (action.type) {
-      case "TOGGLE_READ_MORE":
-        return {
-          ...state,
-          [action.serviceName]: !state[action.serviceName],
-        };
-      default:
-        return state;
-    }
-}
+import '../app/globals.css'
 
 function ServiceCard({service}) {
-    const initialState = {
-        webDevReadMore: false,
-        webDesReadMore: false,
-        appDevReadMore: false,
-    };
-    
-    const [state, dispatch] = useReducer(reducer, initialState);
-    
-    const toggleReadMore = (serviceName) => {
-        dispatch({ type: "TOGGLE_READ_MORE", serviceName });
-    };
 
   return (
     <div
@@ -42,23 +18,10 @@ function ServiceCard({service}) {
 
         <h3 className="text-lg font-medium pb-4 mt-52 underline underline-offset-4">{service.title}</h3>
         <p
-            className={`${
-            state[service.serviceName] ? "h-auto " : "h-32 overflow-hidden"
-            } text-[#fdeed4] text-base px-2 text-justify`}
+            className="h-52 md:h-60 overflow-y-scroll text-[#fdeed4] text-base px-2 pb-4 text-justify custom-scrollbar"
         >
             {service.content}
         </p>
-
-        <button
-            className="normalButton my-2"
-            onClick={() => toggleReadMore(service.serviceName)}
-        >
-            {state[service.serviceName] ? (
-            <span>Read Less</span>
-            ) : (
-            <span>Read More</span>
-            )}
-        </button>
     </div>
   )
 }

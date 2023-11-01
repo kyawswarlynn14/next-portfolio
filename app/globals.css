@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
  
+/* Add custom scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Adjust the width as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333; /* Color of the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #666; /* Color of the track */
+}
+
+.main-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-scrollbar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+.main-scrollbar::-webkit-scrollbar-track {
+  background: #ff69b0;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -67,7 +67,7 @@ function Portfolio() {
 
       <p className="text-md py-2 leading-8 text-justify">
         {/* {data?.description} */}
-        I have successfully built various projects using React Js, Next Js, Node Js and Express Js. Proficient in React.js and Next.js, I also possess strong backend skills in Node.js and Express.js. I specialize in database management using Sequelize, with expertise in MySQL and PostgreSQL. My portfolio showcases dynamic, user-friendly web interfaces and fast, engaging experiences, seamlessly integrating frontend and backend technologies.
+        I have successfully built various projects using <span className="text-[#00FF00]">React Js, Next Js, Node Js, Express Js and Flutter</span>. Proficient in React.js and Next.js, I also possess strong backend skills in Node.js and Express.js. I specialize in database management using Sequelize, with expertise in MySQL and PostgreSQL. My portfolio showcases dynamic, user-friendly web interfaces and fast, engaging experiences, seamlessly integrating frontend and backend technologies.
       </p>
 
       <div className='my-8 grid grid-cols-1 md:grid-cols-2 gap-8' >

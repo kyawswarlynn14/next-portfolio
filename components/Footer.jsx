@@ -33,14 +33,20 @@ function Footer() {
 
         <div className="text-start">
           <h4 className="text-lg mb-2 font-semibold text-center tracking-wider">Navigations</h4>
-          <div className="flex gap-4 ">
+          <div className="flex gap-2 ">
             <a href="#home" className=" text-gray-100 hover:underline underline-offset-2">Home</a>
+            
             <span>|</span>
+
             <a href="#services" className=" text-gray-100 hover:underline underline-offset-2">Service</a>
 
             <span>|</span>
 
             <a href="#portfolio" className=" text-gray-100 hover:underline underline-offset-2">Portfolio</a>
+
+            <span>|</span>
+
+            <a href="#contactme" className=" text-gray-100 hover:underline underline-offset-2">Contact</a>
           </div>
         </div>
       </div>

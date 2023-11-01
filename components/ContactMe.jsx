@@ -42,7 +42,7 @@ function ContactMe() {
     };
 
     return (
-        <div id='contactme' className="w-full md:container mx-auto mt-16">
+        <div className="w-full md:container mx-auto mt-16">
             <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto px-4 md:px-16 py-4 rounded-xl shadow-[0px_2px_10px_5px_rgba(0,0,0,0.2)] dark:shadow-slate-700">
                 <h1 className='subTitle mt-0 mb-6'>Contacts Me</h1>
 

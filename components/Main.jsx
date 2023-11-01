@@ -7,8 +7,8 @@ import ksl from '../public/images/ksl.jpg'
 export default function Main({data, accounts}) {
   
   return (
-    <div id="home" className=" text-center md:w-[80%] mx-auto">
-      <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden my-2">
+    <div id="home" className=" text-center md:w-[80%] mx-auto mb-8 md:mb-0">
+      <div className="mx-auto rounded-full w-60 h-60 md:w-40 md:h-40 relative overflow-hidden my-2">
         <Image width={500} height={500} property="priority" src={ksl} alt="ksl"/>
       </div>
 
@@ -83,7 +83,7 @@ export default function Main({data, accounts}) {
         </div>
       </> */}
 
-      <div className="h-[220px] md:h-[350px] lg:h-[400px] xl:h-[420px] w-auto mx-auto">
+      <div className="hidden md:block h-[220px] md:h-[350px] lg:h-[400px] xl:h-[420px] w-auto mx-auto">
         <ComputersCanvas />
       </div>
     </div>

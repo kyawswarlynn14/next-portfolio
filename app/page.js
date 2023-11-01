@@ -90,7 +90,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`${darkMode ? "dark bg-gray-800 " : "bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8] "} m-0 text-white`}>
+    <div className={`${darkMode ? "dark bg-gray-800 " : "bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8] "} m-0 text-white `}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} token={Cookies.get("token")} />
 
       <div className="w-[95%] md:w-[80%] mx-auto">

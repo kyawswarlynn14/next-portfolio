@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import NavMobile from "./NavMobile";
 import {AiFillHome} from 'react-icons/ai'
-import {FaLaptopCode, FaBlog} from 'react-icons/fa'
+import {FaLaptopCode} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { RiAdminFill, RiContactsFill } from "react-icons/ri";
 
@@ -43,13 +43,6 @@ export default function Navbar({ darkMode, setDarkMode, token }) {
               className="webNavButton"
             >
               <BsPersonWorkspace /> PORTFOLIO
-            </a>
-
-            <a
-              href="#blog"
-              className="webNavButton"
-            >
-              <FaBlog /> BLOG
             </a>
 
             <a
