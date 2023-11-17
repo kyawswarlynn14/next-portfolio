@@ -1,17 +1,20 @@
 import React from "react";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import NavMobile from "./NavMobile";
 import {AiFillHome} from 'react-icons/ai'
-import {FaLaptopCode} from 'react-icons/fa'
+import {FaCertificate, FaLaptopCode} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import { RiAdminFill, RiContactsFill } from "react-icons/ri";
+import ThemeSwitcher from "@/utils/ThemeSwitcher";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function Navbar({ darkMode, setDarkMode, token }) {
+export default function Navbar({token }) {
+  const pathname = usePathname();
 
   return (
-    <nav className={`${darkMode ? 'bg-gray-900' : 'bg-gradient-to-r from-[#ff69b0] to-[#ffb5a8]'} md:text-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-[0.2] sticky top-0 z-20 rounded-b-xl border-b-2 border-white py-1  px-2 md:px-0 flex-col`}>
+    <nav className={` md:text-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-[0.2] sticky top-0 z-20 rounded-b-xl border-b-2 border-white py-1  px-2 md:px-0 flex-col`}>
       <div className="md:w-[95%] lg:w-[80%] mx-auto flex justify-between items-center">
-        <h3 onClick={() => setPopUp(!popUp)} className=" font-bold tracking-wider font-mono">DevelopedByKSL</h3>
+        <Link href={'/'} className=" font-bold tracking-wider font-mono">DevelopedByKSL</Link>
             
         <div className="flex gap-2">
           <nav className="md:flex gap-2 mt-1 font-semibold hidden items-center">
@@ -25,46 +28,44 @@ export default function Navbar({ darkMode, setDarkMode, token }) {
             }
 
             <a
-              href="#home"
-              className="webNavButton"
+              href="/"
+              className={`webNavButton ${pathname === '/' && 'dark:text-[#00FF00] text-[#001F3F]'}`}
             >
               <AiFillHome /> HOME
             </a>
 
             <a
-              href="#services"
-              className="webNavButton"
+              href="/services"
+              className={`webNavButton ${pathname === '/services' && 'dark:text-[#00FF00] text-[#001F3F]'}`}
             >
               <FaLaptopCode /> SERVICES
             </a>
 
             <a
-              href="#portfolio"
-              className="webNavButton"
+              href="/portfolio"
+              className={`webNavButton ${pathname === '/portfolio' && 'dark:text-[#00FF00] text-[#001F3F]'}`}
             >
               <BsPersonWorkspace /> PORTFOLIO
             </a>
 
             <a
-              href="#contactme"
-              className="webNavButton"
+              href="/certificates"
+              className={`webNavButton hidden lg:flex ${pathname === '/certificates' && 'dark:text-[#00FF00] text-[#001F3F]'}`}
+            >
+              <FaCertificate /> CERTIFICATES
+            </a>
+
+            <a
+              href="/contact"
+              className={`webNavButton ${pathname === '/contact' && 'dark:text-[#00FF00] text-[#001F3F]'}`}
             >
               <RiContactsFill /> CONTACT
             </a>
           </nav>
-
-          <div className=" h-10 w-10 flex items-center mt-1">
-            {darkMode ? (
-              <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
-            ) : (
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-xl" />
-            )}
-          </div>
-
-          <div className=" pt-2">
-            <NavMobile />
-          </div>
           
+          <ThemeSwitcher />
+
+          <NavMobile />
         </div>
       </div>
     </nav>

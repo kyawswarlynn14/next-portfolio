@@ -20,12 +20,16 @@
 }
 
 .main-scrollbar::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #ff69b0;
   border-radius: 5px;
 }
 
+.main-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e23a88;
+}
+
 .main-scrollbar::-webkit-scrollbar-track {
-  background: #ff69b0;
+  background: #646464;
 }
 
 @layer base {
@@ -103,7 +107,7 @@
   }
 
   .pageMainDiv {
-    @apply w-full px-2 md:px-0 mx-auto text-lg pt-12 text-[#fdeed4];
+    @apply w-full px-2 md:px-0 mx-auto text-lg pt-8 text-[#fdeed4];
   }
 
   .subTitle {
@@ -115,7 +119,7 @@
   }
 
   .mobileNavButton {
-    @apply font-mono font-semibold bg-white p-2 px-4 rounded-lg flex items-center gap-1;
+    @apply font-mono font-semibold bg-transparent border text-white p-2 px-4 rounded-lg flex items-center gap-1;
   }
 
   .iconStyle {

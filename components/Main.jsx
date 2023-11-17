@@ -7,7 +7,7 @@ import ksl from '../public/images/ksl.jpg'
 export default function Main({data, accounts}) {
   
   return (
-    <div id="home" className=" text-center md:w-[80%] mx-auto mb-8 md:mb-0">
+    <div id="home" className=" text-center md:w-[80%] mx-auto my-8 md:mb-0">
       <div className="mx-auto rounded-full w-60 h-60 md:w-40 md:h-40 relative overflow-hidden my-2">
         <Image width={500} height={500} property="priority" src={ksl} alt="ksl"/>
       </div>

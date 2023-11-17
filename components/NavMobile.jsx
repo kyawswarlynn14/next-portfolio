@@ -2,12 +2,15 @@ import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import { RiMenu3Line, RiCloseCircleFill, RiContactsFill } from "react-icons/ri";
 import {AiFillHome} from 'react-icons/ai'
-import {FaLaptopCode, FaBlog} from 'react-icons/fa'
+import {FaLaptopCode, FaCertificate} from 'react-icons/fa'
 import {BsPersonWorkspace} from 'react-icons/bs'
 import {CgMenuBoxed} from 'react-icons/cg'
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function NavMobile() {
   let [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname();
 
   function closeModal() {
     setIsOpen(false)
@@ -36,50 +39,54 @@ export default function NavMobile() {
                 <Dialog.Panel className="relative mr-auto flex h-full w-60 flex-col overflow-y-auto bg-slate-800 py-4 pb-6 shadow-xl rounded-r-3xl">
 
                 <div className="flex items-center justify-end px-4 my-4" onClick={closeModal}>
-                    <RiCloseCircleFill className='text-3xl text-white' />
+                    <RiCloseCircleFill className='text-3xl text-white hover:text-pink-500 duration-300' />
                 </div>
 
                 <nav className="flex flex-col mt-4 mx-6 gap-4">
                     <a
-                    href="#home"
-                    className="mobileNavButton"
+                    href="/"
+                    className={`mobileNavButton ${pathname === '/' && ' text-[#00FF00]'}`}
                     onClick={closeModal}
                     >
                     <AiFillHome /> HOME
                     </a>
 
                     <a
-                    href="#services"
-                    className="mobileNavButton"
+                    href="/services"
+                    className={`mobileNavButton ${pathname === '/services' && ' text-[#00FF00]'}`}
                     onClick={closeModal}
                     >
                     <FaLaptopCode /> SERVICES
                     </a>
 
                     <a
-                    href="#portfolio"
-                    className="mobileNavButton"
+                    href="/portfolio"
+                    className={`mobileNavButton ${pathname === '/portfolio' && ' text-[#00FF00]'}`}
                     onClick={closeModal}
                     >
                     <BsPersonWorkspace /> PORTFOLIO
                     </a>
 
                     <a
-                    href="#contactme"
-                    className="mobileNavButton"
+                      href="/certificates"
+                      className={`mobileNavButton ${pathname === '/certificates' && ' text-[#00FF00]'}`}
+                      onClick={closeModal}
+                    >
+                      <FaCertificate /> CERTIFICATES
+                    </a>
+
+                    <a
+                    href="/contact"
+                    className={`mobileNavButton ${pathname === '/contact' && ' text-[#00FF00]'}`}
                     onClick={closeModal}
                     >
                     <RiContactsFill /> CONTACT
                     </a>
-
-                    <a
-                    href="#blog"
-                    className="mobileNavButton"
-                    onClick={closeModal}
-                    >
-                    <FaBlog /> BLOG
-                    </a>
                 </nav>
+
+                <div className="mx-auto rounded-full w-40 h-40 relative overflow-hidden my-6">
+                  <Image width={500} height={500} property="priority" src='/images/ksl.jpg' alt="ksl"/>
+                </div>
 
                 </Dialog.Panel>
             </div>

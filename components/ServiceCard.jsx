@@ -18,7 +18,7 @@ function ServiceCard({service}) {
 
         <h3 className="text-lg font-medium pb-4 mt-52 underline underline-offset-4">{service.title}</h3>
         <p
-            className="h-52 md:h-60 overflow-y-scroll text-[#fdeed4] text-base px-2 pb-4 text-justify custom-scrollbar"
+            className="h-60 overflow-y-scroll text-[#fdeed4] text-base px-2 pb-4 text-justify custom-scrollbar"
         >
             {service.content}
         </p>

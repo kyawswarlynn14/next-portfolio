@@ -20,10 +20,10 @@ export const technologies = [
     name: "React JS",
     icon: "/tech/reactjs.png",
   },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: "/tech/redux.png",
-  // },
+  {
+    name: "Redux Toolkit",
+    icon: "/tech/redux.png",
+  },
   {
     name: "Angular",
     icon: "/tech/angular.png"
@@ -48,10 +48,10 @@ export const technologies = [
     name: "MongoDB",
     icon: "/tech/mongodb.png",
   },
-  {
-    name: "Three JS",
-    icon: "/tech/threejs.svg",
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: "/tech/threejs.svg",
+  // },
   {
     name: "git",
     icon: "/tech/git.png",
